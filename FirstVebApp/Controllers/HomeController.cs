@@ -11,9 +11,14 @@ namespace FirstVebApp.Controllers
     public class HomeController : Controller
     {
         List<Person> list;
+        public HomeController(ExportData data)
+        {
+            list = data.Read();
+        }
+
         public IActionResult Index()
         {
-            return View();
+            return View(list);
         }
 
           }

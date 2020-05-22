@@ -27,6 +27,7 @@ namespace FirstVebApp
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                string connection = Configuration.GetConnectionString("DefaultConnection");
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
