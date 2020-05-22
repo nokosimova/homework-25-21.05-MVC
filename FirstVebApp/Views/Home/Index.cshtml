@@ -9,22 +9,22 @@
     <title>Списки</title>
 </head>
 <body>
-    <h3>Покупатели</h3>
+    <h3>Список покупателей:</h3>
     <table>
         <tr>
-            <td>id:</td>
-            <td>Фамилия:</td>
-            <td>Имя:</td>
-            <td>Отчество:</td>
+            <td>id:   </td>
+            <td>Фамилия:   </td>
+            <td>Имя:   </td>
+            <td>Отчество:   </td>
             <td></td>
         </tr>
         @foreach (var person in Model)
         {
         <tr>
-            <td>@person.id</td>
-            <td>@person.LastName</td>
-            <td>@person.FirstName</td>
-            <td>@person.MiddleName</td>
+            <td>@person.id   </td>
+            <td>@person.LastName   </td>
+            <td>@person.FirstName   </td>
+            <td>@person.MiddleName   </td>
         </tr>
         }
     </table>
