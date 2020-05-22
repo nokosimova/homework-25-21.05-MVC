@@ -12,7 +12,7 @@ namespace FirstVebApp.Models
     public class ExportData
     {
         public string ConnectionString = "Data source=KosimovaNodira; Initial catalog = NewDB; Integrated Security=True;";
-        public List<Person> Read()
+        public List<Person> ReadFromPerson()
         {
             try
             {

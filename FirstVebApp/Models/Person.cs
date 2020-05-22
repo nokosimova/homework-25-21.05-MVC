@@ -7,10 +7,10 @@ namespace FirstVebApp.Models
 {
     public class Person
     {
-        int id { get; set; }
-        string LastName { get; set; }
-        string FirstName { get; set; }
-        string MiddleName { get; set; }
+        public int id { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
 
     }
 }

@@ -45,7 +45,7 @@ namespace FirstVebApp
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("s/Home/Error");
                 app.UseHsts();
             }
 

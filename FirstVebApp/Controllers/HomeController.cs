@@ -9,16 +9,11 @@ using FirstVebApp.Models;
 namespace FirstVebApp.Controllers
 {
     public class HomeController : Controller
-    {
-        List<Person> list;
-        public HomeController(ExportData data)
-        {
-            list = data.Read();
-        }
-
+    {        
         public IActionResult Index()
         {
-            return View(list);
+            ExportData data = new ExportData();
+            return View(data.ReadFromPerson());
         }
 
           }
